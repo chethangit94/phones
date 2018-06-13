@@ -37,7 +37,7 @@ def hello():
     return "welcome to world of mobiles!"
 @app.route('/phonelist')
 def phonelist():
-    return jsonify(get_phone_list()) 
+    return jsonify(phone_list()) 
 if __name__ == '__main__':
      app.run(host='0.0.0.0', port=5000)
 
