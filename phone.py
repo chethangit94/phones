@@ -13,7 +13,7 @@ def get_phone_list():
 	cursor = db.cursor()
 
 	# Execute SQL select statement
-	cursor.execute("SELECT * FROM phones")
+	cursor.execute("SELECT * FROM phone")
 
 	# Commit your changes if writing
 	# In this case, we are only reading data
