@@ -7,8 +7,8 @@ def get_phone_list():
 	# Connect
 	db = MySQLdb.connect(host="localhost",
 			     user="root",
-			     passwd="12345",
-			     db="librarymanagement")
+			     passwd="",
+			     db="phones")
 
 	cursor = db.cursor()
 
@@ -39,5 +39,5 @@ def hello():
 def phonelist():
     return jsonify(get_phone_list()) 
 if __name__ == '__main__':
-     app.run()
+     app.phone()
 
