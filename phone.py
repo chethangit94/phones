@@ -35,8 +35,8 @@ def get_phone_list():
 @app.route('/')
 def hello():
     return "welcome to world of mobiles!"
-@app.route('/booklist')
-def booklist():
+@app.route('/phonelist')
+def phonelist():
     return jsonify(get_phone_list()) 
 if __name__ == '__main__':
      app.run()
