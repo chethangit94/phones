@@ -27,7 +27,7 @@ def get_phone_list():
 	    row = cursor.fetchone()
 	    print (row[0], "-->", row[1])
 	    phone_list[row[0]] = row[1]
-
+        print "closing db connection" 
 	# Close the connection
 	db.close()
 	return phone_list
@@ -37,7 +37,7 @@ def hello():
     return "welcome to world of mobiles!"
 @app.route('/phonelist')
 def phonelist():
-    return jsonify(phone_list()) 
+    return jsonify(get_phone_list()) 
 if __name__ == '__main__':
      app.run(host='0.0.0.0', port=5000)
 
