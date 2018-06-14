@@ -21,7 +21,7 @@ def get_phone_list():
 
 	# Get the number of rows in the resultset
 	numrows = cursor.rowcount
-	book_list = {}
+	phone_list = {}
 	# Get and display one row at a time
 	for x in range(0, numrows):
 	    row = cursor.fetchone()
